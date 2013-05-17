@@ -1,0 +1,24 @@
+!!!
+%html{:lang => "es"}
+  %head
+    %title Surveys
+    %meta{:charset => "utf-8"}
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}
+    = stylesheet_link_tag "display", :media => "all"
+    = stylesheet_link_tag "normalize", :media => "all"
+    = yield :head_style
+    = javascript_include_tag "prefixfree.min"
+    = javascript_include_tag "display"
+    = javascript_include_tag "modernizr-2.6.2-respond-1.1.0.min"
+    = yield :head_script
+    = csrf_meta_tags
+  %body
+    %header
+      %hgroup#title
+        %h2 #{yield :header_title}
+        %p Encuesta de satisfacción
+      %figure#logo
+        = image_tag "logo_3.png", :alt => "In2Teck", :title => "In2Teck"
+    #yield
+      = yield
+    = javascript_include_tag "google-analytics"
