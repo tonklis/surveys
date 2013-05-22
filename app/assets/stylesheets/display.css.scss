@@ -1,19 +1,24 @@
 // Place all the styles related to the display controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body{
+body {
 	color: #5F6062;
   font-size: 16px;
   font-family: helvetica, arial;
-	margin: 0;
+  margin: auto;
   padding: 0;
 }
 
-header{
-  background: #EEE;
+html {
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #f2f2f2;
 	padding: 0 0.5em 3em 0.5em;
-	//position: fixed;
-	width: 100%;
+	position: fixed;
+  width: 100%;
+  height: 4em;
 }
 
 header h2 {
@@ -27,19 +32,20 @@ header p {
 }
 
 hgroup {
+  float: left;
   width: 60%;
 }
 
-#logo{
+#logo {
   float: right;
   margin: 0.5em 1em 1em 0.5em;
 }
 
-#logo img{
-  width: 80px;
+#logo img {
+  width: 90px;
 }
 
-#title{
+#title {
   height: 3em;
 }
 
@@ -49,11 +55,28 @@ hgroup {
 }
 
 #yield {
-  padding: 0.5em 1.5em;
+  background-color: #FFF;
+  padding: 100px 1em 1em;
 }
 
+.ss-q-long {
+  max-width: 280px;
+}
 
-@media screen and (min-width:768px){
+table {
+  border-collapse: collapse;
+  font-size: 0.7em;
+  width: 30em;
+}
+
+@media screen and (min-width:768px) {
+  body {
+    margin: auto;
+    max-width: 45em;
+  }
+  header {
+    width: 45em;
+  }
   header h2 { 
     font-size: 26px;
   }
@@ -63,4 +86,50 @@ hgroup {
   #logo img {
     width: 127px;
   }
+  .ss-q-long {
+    max-width: 400px;
+  }
+  table {
+    font-size: 1em;
+    width: 43em;
+  }
+}
+
+input {
+  border-radius: 1em;
+  background-color: #EEE;
+}
+
+// estilos de Google
+
+.ss-q-title {
+  display: block;
+  font-weight: bold;
+}
+
+.ss-q-help {
+  display: block;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+.ss-choices {
+  list-style: none;
+}
+
+.ss-leftlabel {
+  text-align: right;
+}
+
+.ss-gridrow {
+  border-bottom: 1px solid #d3d8d3;
+  text-align: center;
+}
+
+.ss-leftlabel{
+  text-align: right;
+}
+
+.ss-form-entry {
+  margin: 1em 0 0;
 }
