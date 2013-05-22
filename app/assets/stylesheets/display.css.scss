@@ -66,6 +66,7 @@ hgroup {
 table {
   border-collapse: collapse;
   font-size: 0.7em;
+  text-align: center;
   width: 30em;
 }
 
@@ -123,7 +124,6 @@ input {
 
 .ss-gridrow {
   border-bottom: 1px solid #d3d8d3;
-  text-align: center;
 }
 
 .ss-leftlabel{
@@ -132,4 +132,10 @@ input {
 
 .ss-form-entry {
   margin: 1em 0 0;
+}
+
+.ss-grid-numbers {
+  overflow: hidden;
+  white-space: nowrap; /* Don't forget this one */
+  text-overflow: ellipsis;
 }
