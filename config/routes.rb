@@ -12,6 +12,8 @@ TorreCentenario::Application.routes.draw do
 	  get 'signup', :to => "devise/registrations#new"
   end
 
+  match "confirmation", :to => "display#confirmation", :as => :confirmation
+  
   match "/:id", :to => "display#unique_page", :as => :unique_page
 
   resources :users

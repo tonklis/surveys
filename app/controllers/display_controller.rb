@@ -8,4 +8,8 @@ class DisplayController < ApplicationController
     @survey = Survey.find_by_path_url(params[:id])
   end	
 
+  def confirmation
+
+  end
+
 end
